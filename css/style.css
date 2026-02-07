@@ -10,7 +10,7 @@
     /* Satin Gold for sophisticated contrast */
     --gray-light: #e6f1f8;
 
-    --font-heading: 'Playfair Display', serif;
+    --font-heading: 'Montserrat', sans-serif;
     --font-body: 'Inter', sans-serif;
 
     --spacing-sm: 1rem;
@@ -128,7 +128,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #e0f7fa 0%, #e8eaf6 100%);
+    background: url('../images/hero-bg.png') no-repeat center center/cover;
     text-align: center;
     padding-top: 80px;
     /* Offset for fixed header */
@@ -233,6 +233,15 @@ nav {
 .service-card h3 {
     margin-bottom: 1rem;
     font-size: 1.5rem;
+}
+
+.service-icon-img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+    border-radius: 18px;
+    /* App icon style rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .app-store-link {
