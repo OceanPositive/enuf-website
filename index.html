@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ENUF - More than enough for the planet.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header>
-        <nav>
+    <header class="site-header">
+        <nav class="container">
             <div class="logo">ENUF</div>
-            <ul>
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+                <i data-lucide="menu" class="icon-menu"></i>
+                <i data-lucide="x" class="icon-close"></i>
+            </button>
+            <ul class="nav-links">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
@@ -20,43 +31,65 @@
     </header>
 
     <main>
-        <section id="hero">
-            <div class="hero-text">
-                <h1>ENUF</h1>
-                <h2>More than enough for the planet.</h2>
-                <p>It's enough to live</p>
+        <section id="hero" class="hero-section">
+            <div class="hero-content container">
+                <h1 class="fade-in">ENUF</h1>
+                <h2 class="fade-in delay-1">More than enough for the planet.</h2>
+                <p class="subtitle fade-in delay-2">It's enough to live in harmony.</p>
+                <a href="#about" class="cta-button fade-in delay-3">Discover More</a>
             </div>
         </section>
 
-        <section id="about">
-            <h2>About Us</h2>
-            <p>ENUF is a company dedicated to creating products that are friendly to nature and the ocean. We believe that it's enough to live in harmony with our planet.</p>
-        </section>
-
-        <section id="services">
-            <h2>Our Services</h2>
-            <div class="service">
-                <h3>Badabook</h3>
-                <p>A logbook service for scuba divers. Record your underwater adventures and share them with the world. Badabook helps you keep track of your dives, certifications, and equipment.</p>
+        <section id="about" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">About Us</h2>
+                <p class="section-text">ENUF is dedicated to creating products that are friendly to nature and the
+                    ocean. We believe that simplicity is the ultimate sophistication, and it is enough to live
+                    sustainably with our planet.</p>
             </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Get in touch with us to learn more about our products and services.</p>
-            <form>
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+        <section id="services" class="section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i data-lucide="book-open" class="service-icon"></i>
+                        <h3>Badabook</h3>
+                        <p>The premier logbook service for scuba divers. Record your underwater adventures, track
+                            certifications, and share your journey with the world.</p>
+                        <a href="https://apps.apple.com/app/badabook/id6751500491" target="_blank"
+                            class="app-store-link">
+                            Download on the App Store <i data-lucide="external-link" class="btn-icon"></i>
+                        </a>
+                    </div>
+                    <!-- Placeholder for potential future services -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-text">Connect with us to start your journey.</p>
+                <div class="contact-email-container">
+                    <a href="mailto:support@enuf.io" class="email-link">
+                        <i data-lucide="mail" class="email-icon"></i>
+                        support@enuf.io
+                    </a>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 ENUF. All rights reserved.</p>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 ENUF. All rights reserved.</p>
+        </div>
     </footer>
 
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script src="js/script.js"></script>
 </body>
+
 </html>
